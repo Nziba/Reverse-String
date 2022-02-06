@@ -1,0 +1,24 @@
+.box-set{
+    background: #eaeaed;
+    overflow: auto;
+}
+.box{
+    background: #2db34a;
+    float: left;
+    margin: 1.858736659%;
+    width: 100px;
+    border-radius: 5px;
+    height: 50px;
+    align-items: center;
+ }
+.box-set:before,
+.box-set:after{
+    content: "";
+    display: table;
+}
+.box-set:after{
+    clear: both;
+}
+.box-set{
+    *zoom: 1;
+}

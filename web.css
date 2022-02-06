@@ -1,0 +1,118 @@
+*{
+    /* browser reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(50  213 221 / 50%), rgb(155 141 86 / 88%));
+    width: 100vw;
+}
+section.parent-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem 0rem;
+    margin: auto;
+}
+div.text-input-container input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 8px;
+    color: orange;
+    margin: 1rem 0rem; 
+}
+div.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.results-container input{
+    width: 50rem;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 1rem 0rem;
+    cursor: not-allowed;
+}
+
+input.result-screen{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 1rem 0rem;
+    cursor: not-allowed;
+}
+div.btn-container button{
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    margin: 3px;
+}
+div.btn-container button.reverse-btn{
+    background: #5476548a;
+    color: whitesmoke;
+}
+div.btn-container button.store-btn{
+    background: #2b2ec78a;
+}
+div.history-container{
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: flex-end;
+}
+div.history-container .history-btn{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background: #6e8fac;
+    color: white;
+    text-align: center;
+}
+#btn:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+    animation: jump 2s ease-in-out 4;
+    transition: 2s ease;  
+}
+@keyframes jump{
+    from{
+        position: relative;
+        top: 0px;
+        left: -17px;
+    }
+    to{
+        position: relative;
+        top: 20px;
+        left: 0px;
+    }  
+}
+@media (min-width: 600){
+    p{
+    font-size: 1.25rem;
+    }
+}
+@media (min-width:800){
+    p{
+    font-size: 1.25rem;
+    }
+}
+@media (min-width:1000){
+    p{
+    font-size: 1.25rem; 
+    } 
+}
